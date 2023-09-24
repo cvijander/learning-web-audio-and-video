@@ -150,13 +150,17 @@
 
      rail.addEventListener('click', seekMedia);
      fill.addEventListener('click', seekMedia);
-     function seekMedia(e) {}
+     function seekMedia(e) {
+        media.currentTime = e.offsetX / rail.offsetWidth * media.duration;
+     }
 
      media.addEventListener('loadedmetadata', updateTime);
      media.addEventListener('timeupdate', updateTime);
      function updateTime() {
         position.textContent = timeDisplay(media.currentTime);
         duration.textContent =timeDisplay(media.duration);
+        var currentlength = rail.clientWidth * (media.currentTime / media.duration);
+        fill.style.width = currentlength + 'px';
 
      }
 
