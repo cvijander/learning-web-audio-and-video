@@ -138,7 +138,21 @@
      var rail = document.querySelector('#controlbarrail');
      var fill = document.querySelector('#controlbarfill');
 
-     
+     play.addEventListener('click', playMedia);
+     function playMedia () {}
+     pause.addEventListener('click', pauseMedia);
+     function pauseMedia() {}
+
+     rail.addEventListener('click' , seekMedia);
+     fill.addEventListener('click', seekMedia);
+     function seekMedia(e) {}
+
+     media.addEventListener('loadedmetadata', updateTime);
+     media.addEventListener('timeupdate', updateTime);
+     function updateTime() {}
+
+
+
   </script>
 
   
