@@ -19,14 +19,8 @@
         color: blanchedalmond;
         padding: 10px;
     }
-
-    #video-container {
-        height: 450px;
-        width: 100%;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-    }
+  
+   
 
     #content-container {
         position: relative;
@@ -35,6 +29,14 @@
 
     time {
         color: aliceblue;
+    }
+    #video-container {
+        position: relative;
+    }
+    #mediacontrols {
+        position: absolute;
+        left:20px;
+        bottom:20px;
     }
     </style>
 </head>
@@ -71,7 +73,7 @@
     <h1>Looping Background Video</h1>
    </div>
 --> 
-
+  <div id="video-container">
   <video src="media/video.mp4" poster="media/still.png" preload="metadata" width="600" >
   </video>
 
@@ -86,6 +88,7 @@
             <div id="controlbarfill"></div>
         </div>
     </div>
+  </div>
 
   
 
