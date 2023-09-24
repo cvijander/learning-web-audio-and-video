@@ -58,13 +58,26 @@
         <track default label="English" kind="captions" srclang="en" src="media/captions.vtt">
     </video>
 -->
-
+   <!--adding video in background in html -->
+   <!--
    <div id="video-container">
     <video src="media/video.mp4" allowfullscreen autoplay loop width="100%" ></video>
    </div>
    <div id="content-container">
     <h1>Looping Background Video</h1>
    </div>
+--> 
+
+  <video src="media/video.mp4" poster="media/still.png" preload="metadata" width="600" >
+  </video>
+
+    <div id="mediacontrols">
+        <button id="playbutton">Play</button>
+        <button id="pausebutton">Pause</button>
+
+    </div>
+
+  
 
 </body>
 </html>
