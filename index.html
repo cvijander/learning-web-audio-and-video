@@ -112,7 +112,7 @@
    </div>
 --> 
   <div id="video-container">
-  <video src="media/video.mp4" poster="media/still.png" preload="metadata" width="600" >
+  <video id="videoelement" src="media/video.mp4" poster="media/still.png" preload="metadata" width="600" >
   </video>
 
     <div id="mediacontrols">
@@ -128,6 +128,18 @@
        
     </div>
   </div>
+
+  <script>
+     var media  = document.querySelector('#videoelement');
+     var play = document.querySelector('#playbutton');
+     var pause = document.querySelector('#pausebutton');
+     var position = document.querySelector('#positiondisplay');
+     var duration = document.querySelector('#durationdisplay');
+     var rail = document.querySelector('#controlbarrail');
+     var fill = document.querySelector('#controlbarfill');
+
+     
+  </script>
 
   
 
