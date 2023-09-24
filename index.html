@@ -19,6 +19,19 @@
         color: blanchedalmond;
         padding: 10px;
     }
+
+    #video-container {
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+    }
+
+    #content-container {
+        position: relative;
+        top: 0;
+    }
     </style>
 </head>
 <body>
@@ -39,9 +52,19 @@
     </audio>
     </figure>  -->
 
+    <!--
+     
     <video src="media/video.mp4" poster="media/still.png" preload="metadata" width="600" controls >
         <track default label="English" kind="captions" srclang="en" src="media/captions.vtt">
     </video>
+-->
+
+   <div id="video-container">
+    <video src="media/video.mp4" allowfullscreen autoplay loop width="100%" ></video>
+   </div>
+   <div id="content-container">
+    <h1>Looping Background Video</h1>
+   </div>
 
 </body>
 </html>
